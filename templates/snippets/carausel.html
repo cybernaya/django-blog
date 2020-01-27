@@ -1,0 +1,11 @@
+{% load static %}
+<div id="carouselhome" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="item carousel-item active">
+        	{% block banner_app %}
+        		<img src="{% static "img/banner1.jpg" %}" width=100% alt="carousel">
+        	{% endblock banner_app %}
+            <div class="carousel-caption d-none d-md-block"></div>
+     	</div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% include "snippets/styles.html" %}
+    {% block css_app %}
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    {% endblock css_app %}
+    <link rel = "icon" href = "{% static "img/logo16x16.png" %}" widthtype = "image/x-icon">
+    <title>{{title}} &#171; Cross Security</title>
+    <div class="jumbotron jumbroton-fluid">
+        <div class="container text-white text-center">
+            <img class="immediate" src="{% static "img/logo.png" %}" width="200" /><br><br>
+        <button type="button" class="btn btn-outline-success text-center"><a href="/">
+           CROSS SECURITY
+        </button>
+        </div>
+    </div>
+    {% include "snippets/navbar.html" %}
+  </head>
+  <body>
+    {% block posts %}
+    {% endblock posts %}
+    {% include "snippets/script.html" %}
+   <!-- {% include "snippets/footer.html" %} -->
+  </body>
+</html>
